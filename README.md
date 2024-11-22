@@ -1,5 +1,7 @@
 # Real Estate Listing Site
 
+## Calvin VanderVeer and Kenton Weiss
+
 Welcome to the Real Estate Listing Site! This platform is designed to facilitate the listing, browsing, and management of properties for sale or rent. Whether you're a buyer, seller, or agent, this site provides all the tools you need to connect and find your perfect match.
 
 ---
