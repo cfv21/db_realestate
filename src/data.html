@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Real Estate Listings Database</title>
+   </head>
+   <body>
+      <h1>Real Estate Listings Database Query</h1>
+      <p>Use the forms below to query the database for real estate listings, agents, buyers, and more.</p>
+
+      <h2>View Listings</h2>
+      <form method="post" action="database.php">
+         <p>Choose a listing type to display:
+            <select name="action">
+               <option value="listings">All Listings</option>
+               <option value="houses">Houses</option>
+               <option value="business_properties">Business Properties</option>
+            </select>
+         </p>
+         <p><input type="submit" value="View Listings"></p>
+      </form>
+
+      <h2>Search Houses</h2>
+      <form method="post" action="database.php">
+         <input type="hidden" name="action" value="search_houses">
+         <p>Minimum Price: <input type="number" name="min_price" required></p>
+         <p>Maximum Price: <input type="number" name="max_price" required></p>
+         <p>Bedrooms: <input type="number" name="bedrooms" required></p>
+         <p>Bathrooms: <input type="number" name="bathrooms" required></p>
+         <p><input type="submit" value="Search Houses"></p>
+      </form>
+
+      <h2>Search Business Properties</h2>
+      <form method="post" action="database.php">
+         <input type="hidden" name="action" value="search_business_properties">
+         <p>Minimum Price: <input type="number" name="min_price" required></p>
+         <p>Maximum Price: <input type="number" name="max_price" required></p>
+         <p>Minimum Size (sq ft): <input type="number" name="min_size" required></p>
+         <p>Maximum Size (sq ft): <input type="number" name="max_size" required></p>
+         <p><input type="submit" value="Search Business Properties"></p>
+      </form>
+
+      <h2>View Agents</h2>
+      <form method="post" action="database.php">
+         <input type="hidden" name="action" value="agents">
+         <p><input type="submit" value="View Agents"></p>
+      </form>
+
+      <h2>View Buyers</h2>
+      <form method="post" action="database.php">
+         <input type="hidden" name="action" value="buyers">
+         <p><input type="submit" value="View Buyers"></p>
+      </form>
+
+      <h2>Custom Query</h2>
+      <form method="post" action="database.php">
+         <p>Enter your SQL query: 
+            <input type="text" name="query" size="80" required>
+         </p>
+         <p><input type="submit" value="Run Query"></p>
+      </form>
+   </body>
+</html>
