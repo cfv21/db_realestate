@@ -36,7 +36,7 @@
    <body>
       <h1>Real Estate Listings Database</h1>
       <?php
-         $database = mysqli_connect("localhost", "root", "", "Products");
+         $database = mysqli_connect("localhost", "root", "", "rproducts");
 
          if (!$database) {
             die("<p>Could not connect to database: " . mysqli_connect_error() . "</p>");
