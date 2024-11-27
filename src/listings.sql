@@ -17,6 +17,7 @@ INSERT INTO Property(address, ownerName, price) VALUES ('808 W Carolina Street',
 INSERT INTO Property(address, ownerName, price) VALUES ('333 Elm Street', 'Michael Myers', 1000000);
 INSERT INTO Property(address, ownerName, price) VALUES ('1 Sesame Street', 'Big Bird', 200000);
 INSERT INTO Property(address, ownerName, price) VALUES ('25 Martin Luther King Jr. Blvd', 'Martin Luther King III', 410000);
+INSERT INTO Property(address, ownerName, price) VALUES ('38W656 Hopps Rd', 'Ryan Weiss', 157000);
 
 CREATE TABLE House
 (
@@ -32,6 +33,7 @@ INSERT INTO House (bedrooms, bathrooms, size, address) VALUES (4, 3, 2000, '808 
 INSERT INTO House (bedrooms, bathrooms, size, address) VALUES (2, 1, 1200, '333 Elm Street');
 INSERT INTO House (bedrooms, bathrooms, size, address) VALUES (5, 4, 2500, '1 Sesame Street');
 INSERT INTO House (bedrooms, bathrooms, size, address) VALUES (3, 2, 1600, '25 Martin Luther King Jr. Blvd');
+INSERT INTO House (bedrooms, bathrooms, size, address) VALUES (3, 2, 2744, '38W656 Hopps Rd');
 
 CREATE TABLE BusinessProperty
 (
@@ -46,6 +48,7 @@ INSERT INTO BusinessProperty (propertyType, size, address) VALUES ('Office', 450
 INSERT INTO BusinessProperty (propertyType, size, address) VALUES ('Warehouse', 6000, '333 Elm Street');
 INSERT INTO BusinessProperty (propertyType, size, address) VALUES ('Hotel', 10000, '1 Sesame Street');
 INSERT INTO BusinessProperty (propertyType, size, address) VALUES ('Restaurant', 3500, '25 Martin Luther King Jr. Blvd');
+INSERT INTO BusinessProperty (propertyType, size, address) VALUES ('Office', 1200, '38W656 Hopps Rd');
 
 CREATE TABLE Firm
 (
